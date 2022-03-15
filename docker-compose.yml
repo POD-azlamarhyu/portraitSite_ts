@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  node:
+    container_name: cont_node_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ./:/app
+    ports:
+      - "3000:3000"
+    command: sh -c "cd app && npm run dev"
