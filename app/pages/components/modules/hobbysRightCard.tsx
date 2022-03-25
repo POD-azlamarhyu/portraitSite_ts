@@ -1,5 +1,5 @@
 import React from "react";
-import {hobbysTypes} from "../../api/type";
+import {hobbysTypes,hobbysdescType} from "../../api/type";
 
 const HobbysRightCard:React.VFC<hobbysTypes> = (props) =>{
     return (
@@ -20,7 +20,7 @@ const HobbysRightCard:React.VFC<hobbysTypes> = (props) =>{
             <div className="md:w-7/12">
                 <h2 className="mx-5 my-5 text-4xl font-medium">{props.contents.title}</h2>
                 <div className="mx-5 my-7">
-                    {props.contents.description.map((desc) => {
+                    {props.contents.description.map((desc:hobbysdescType) => {
                         return(
                             <p className="text-2xl text-slate-600" key={desc.id}>{desc.param}</p>
                         )
