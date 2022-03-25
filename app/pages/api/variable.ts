@@ -10,10 +10,10 @@ export const webTitle = "Jiro's Portrait Site";
 export const topImage = require("../../public/portrait_top.png").default;
 
 const skillCardCol = {
-    red:`bg-gradient-to-r from-fuchsia-500 to-fuchsia-200 w-132 h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
-    blue:`bg-gradient-to-r from-blue-500 to-blue-200 w-132 h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
-    indigo:`bg-gradient-to-r from-indigo-500 to-indigo-200 w-132 h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
-    green:`bg-gradient-to-r from-gray-500 to-gray-200 w-132 h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`
+    red:`bg-gradient-to-r from-fuchsia-500 to-fuchsia-200 md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
+    blue:`bg-gradient-to-r from-blue-500 to-blue-200 md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
+    indigo:`bg-gradient-to-r from-indigo-500 to-indigo-200 md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
+    green:`bg-gradient-to-r from-gray-500 to-gray-200 md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`
 }
 
 export const hobbysCardContents = [

@@ -12,10 +12,10 @@ const Hobbys:React.VFC = () => {
         <>
             <Header />
             <div className="flex justify-center">
-                <div className="flex-none w-1/12 m-4">
+                <div className="flex-none w-0 md:w-1/12 sm:m-1 md:m-4">
                     <></>
                 </div>
-                <div className="flex-1 flex-col w-5/6 m-4">
+                <div className="flex-1 flex-col w-full md:w-5/6 m-1 p-1 sm:m-1 md:m-3 flex justify-center">
                     {hobbysCardContents.map((contents)=>{
                         return(
                             contents.id % 2 === 0 ? (
@@ -26,7 +26,7 @@ const Hobbys:React.VFC = () => {
                         )
                     })}
                 </div>
-                <div className="flex-none w-1/12 m-4">
+                <div className="flex-none w-0 md:w-1/12 sm:m-1 md:m-4">
                     <></>
                 </div>
             </div>
