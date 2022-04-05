@@ -1,16 +1,16 @@
-export type importImage = {
+export interface importImage{
     src : string
     height: number
     width: number
     blurDataURL: string
 };
 
-export type hobbysdescType = {
+export interface hobbysdescType{
     id:number,
     param:string
-}[];
+};
 
-export type hobbysTypes = {
+export interface hobbysTypes{
     id:number
     image: any
     title: string
@@ -20,24 +20,24 @@ export type hobbysTypes = {
     }[]
 };
 
-export type worktechTypes = {
-    id: 0,
+export interface worktechTypes{
+    id: number,
     mark: string
-}[];
+};
 
-export type workTypes = {
+export interface workTypes{
     id: number,
     image: any,
     title: string,
     description: string,
     useTech:{
-        id: 0,
+        id: number,
         mark: string,
     }[],
     repository:string
 };
 
-export type skillTypes = {
+export interface skillTypes{
     id: number
     image: any
     title: string

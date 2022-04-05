@@ -4,7 +4,7 @@ import Footer from './footer';
 import HobbysLeftCard from "../modules/hobbysLeftCard";
 import HobbysRightCard from "../modules/hobbysRightCard";
 import { hobbysCardContents } from "../../api/variable";
-
+import { hobbysTypes } from "../../api/type";
 
 const Hobbys:React.VFC = () => {
 
@@ -16,12 +16,12 @@ const Hobbys:React.VFC = () => {
                     <></>
                 </div>
                 <div className="flex-1 flex-col w-full md:w-5/6 m-1 p-1 sm:m-1 md:m-3 flex justify-center">
-                    {hobbysCardContents.map((contents)=>{
+                    {hobbysCardContents.map((contents:hobbysTypes ,key:number)=>{
                         return(
                             contents.id % 2 === 0 ? (
-                                <HobbysLeftCard contents={contents} key={contents.id}/>
+                                <HobbysLeftCard contents={contents} key={key}/>
                             ):(
-                                <HobbysRightCard contents={contents} key={contents.id}/>
+                                <HobbysRightCard contents={contents} key={key}/>
                             )
                         )
                     })}

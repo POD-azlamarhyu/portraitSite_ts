@@ -9,6 +9,8 @@ export const url = {
 export const webTitle = "Jiro's Portrait Site";
 export const topImage = require("../../public/portrait_top.png").default;
 
+export const copyright = "shell varng 2022";
+
 const skillCardCol = {
     red:`bg-gradient-to-r from-fuchsia-500 to-fuchsia-200 w-full md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
     blue:`bg-gradient-to-r from-blue-500 to-blue-200 md:w-132 w-full md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
@@ -193,11 +195,11 @@ export const worksCardContents = [
                 mark:"devicon-unity-original colored"
             },
         ],
-        repository: "https://github.com/POD-azlamarhyu/UnityBallrollgame",
+        repository: "https://github.com/POD-azlamarhyu/unity_tutorial_scrollegame",
     },
     {
         id: 5,
-        image: require("../../../public/portrait_e.png").default,
+        image: require("../../public/portrait_e.png").default,
         title: "Portrait Site TypeScript ver.",
         description: "上記自己紹介サイトのTypeScript版です. ",
         useTech: [
