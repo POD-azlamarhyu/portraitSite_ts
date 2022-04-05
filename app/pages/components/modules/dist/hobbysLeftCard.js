@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var react_1 = require("react");
+var HobbysLeftCard = function (_a) {
+    var contents = _a.contents;
+    return (react_1["default"].createElement("div", { className: "flex flex-col md:flex-row w-full h-94 bg-sky-300 mx-2 my-10 rounded-xl transform \n                            hover:scale-110 transition-transform" },
+        react_1["default"].createElement("div", { className: "md:w-7/12" },
+            react_1["default"].createElement("h2", { className: "mx-5 my-5 text-4xl font-medium" }, contents.title),
+            react_1["default"].createElement("div", { className: "mx-5 my-7" }, contents.description.map(function (desc) {
+                return (react_1["default"].createElement("p", { className: "text-2xl text-slate-600", key: desc.id }, desc.param));
+            }))),
+        react_1["default"].createElement("div", { className: "md:w-5/12 flex justify-center items-center align-middle" }, contents.image.src ? (react_1["default"].createElement("div", { className: "mx-3 my-3 xl:p-2" },
+            react_1["default"].createElement("img", { src: contents.image.src, alt: "img" }))) : (react_1["default"].createElement("div", { className: "flex justify-center items-center m-1 p-2 h-64" },
+            react_1["default"].createElement("p", { className: "text-6xl text-gray-500" }, "No Image"))))));
+};
+exports["default"] = HobbysLeftCard;

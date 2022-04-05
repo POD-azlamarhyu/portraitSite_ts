@@ -5,6 +5,7 @@ import Header from "./header";
 import Footer from "./footer";
 import SkillCard from "../modules/skillCard";
 import "devicon";
+import { skillTypes } from "../../api/type";
 
 
 const Skills:React.VFC = () =>{
@@ -13,7 +14,7 @@ const Skills:React.VFC = () =>{
             <Header />
             <div className="flex justify-center">
                 <div className="min-h-screen flex flex-wrap justify-center items-center mx-3 my-3 md:mx-6 md:my-5">
-                    {skillCardContents.map((contents)=> {
+                    {skillCardContents.map((contents:skillTypes)=> {
                         return (
                             <SkillCard contents = {contents} key={contents.id}/>
                         );

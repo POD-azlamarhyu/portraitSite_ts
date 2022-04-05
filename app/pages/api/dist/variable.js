@@ -1,7 +1,7 @@
 "use strict";
 // import {importImage} from './type';
 exports.__esModule = true;
-exports.skillCardContents = exports.worksCardContents = exports.hobbysCardContents = exports.topImage = exports.webTitle = exports.url = void 0;
+exports.skillCardContents = exports.worksCardContents = exports.hobbysCardContents = exports.copyright = exports.topImage = exports.webTitle = exports.url = void 0;
 exports.url = {
     urlBlog: "https://www.s-gakuenblog.com/",
     urlGit: "https://github.com/POD-azlamarhyu",
@@ -9,6 +9,7 @@ exports.url = {
 };
 exports.webTitle = "Jiro's Portrait Site";
 exports.topImage = require("../../public/portrait_top.png")["default"];
+exports.copyright = "shell varng 2022";
 var skillCardCol = {
     red: "bg-gradient-to-r from-fuchsia-500 to-fuchsia-200 w-full md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform",
     blue: "bg-gradient-to-r from-blue-500 to-blue-200 md:w-132 w-full md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform",
@@ -188,11 +189,11 @@ exports.worksCardContents = [
                 mark: "devicon-unity-original colored"
             },
         ],
-        repository: "https://github.com/POD-azlamarhyu/UnityBallrollgame"
+        repository: "https://github.com/POD-azlamarhyu/unity_tutorial_scrollegame"
     },
     {
         id: 5,
-        image: require("../../../public/portrait_e.png")["default"],
+        image: require("../../public/portrait_e.png")["default"],
         title: "Portrait Site TypeScript ver.",
         description: "上記自己紹介サイトのTypeScript版です. ",
         useTech: [

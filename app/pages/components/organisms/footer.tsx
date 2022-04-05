@@ -5,13 +5,13 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import {url} from '../../api/variable';
 
-export const copyright = "shell varng 2022";
+import { copyright } from "../../api/variable";
 
 
 
 const Footer = () => {
 
-    const openUrl = (n) =>{
+    const openUrl = (n:number) =>{
         if(n === 0){
             window.open(url.urlGit,"_blank");
         }else if(n===1){
