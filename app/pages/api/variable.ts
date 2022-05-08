@@ -7,7 +7,24 @@ export const url = {
 };
 
 export const webTitle = "Jiro's Portrait Site";
-export const topImage = require("../../public/portrait_top.png").default;
+// export const topImage = require("../../public/portrait_top.png").default;
+// export const topImage2 = require("../../public/portraitsite_top2.png").default;
+// export const topImage3 = require("../../public/portraitsite_top3.png").default;
+
+export const topImages = [
+    {
+        image:require("../../public/topimage1.png").default,
+    },
+    {
+        image:require("../../public/topimage2.png").default,
+    },
+    {
+        image:require("../../public/topimage3.png").default,
+    },
+    {
+        image:require("../../public/topimage4.png").default,
+    }
+];
 
 export const copyright = "shell varng 2022";
 
@@ -82,7 +99,7 @@ export const hobbysCardContents = [
     },
     {
         id: 4,
-        image: "",
+        image: require("../../public/blogimg.png").default,
         title: "発信",
         description: [
             {

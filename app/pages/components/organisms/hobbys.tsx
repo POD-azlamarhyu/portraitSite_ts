@@ -6,6 +6,7 @@ import HobbysRightCard from "../modules/hobbysRightCard";
 import { hobbysCardContents } from "../../api/variable";
 import { hobbysTypes } from "../../api/type";
 
+
 const Hobbys:React.VFC = () => {
 
     return (

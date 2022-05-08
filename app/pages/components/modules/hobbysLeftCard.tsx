@@ -1,5 +1,6 @@
 import React from "react";
 import {hobbysTypes,hobbysdescType} from "../../api/type";
+const NoImage = require("../../../public/no_image_logo.png").default;
 
 const HobbysLeftCard:React.VFC<hobbysTypes> = ({contents}) => {
     return (
@@ -21,8 +22,8 @@ const HobbysLeftCard:React.VFC<hobbysTypes> = ({contents}) => {
                         <img src={contents.image.src} alt="img"/>
                     </div>
                 ):(
-                    <div className="flex justify-center items-center m-1 p-2 h-64">
-                        <p className="text-6xl text-gray-500">No Image</p>
+                    <div className="mx-3 my-3 xl:p-2">
+                        <img src={NoImage.src} alt="img"/>
                     </div>
                 )}
             </div>

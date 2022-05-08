@@ -5,6 +5,7 @@ import WorksCard from "../modules/workCard";
 import { worksCardContents } from "../../api/variable";
 import { workTypes } from "../../api/type";
 
+
 const Works:React.VFC = () => {
 
     return(
