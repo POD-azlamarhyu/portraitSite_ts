@@ -15,7 +15,7 @@ const Top:React.VFC = () => {
             {
                 topImages.map((content:any) => {
                     return (
-                        <div className="m-0 p-0 bg-gray-700">
+                        <div className="m-0 p-0 bg-gray-700" key={content.id}>
                             <div className="m-0 p-0">
                                 <img src={content.image.src}/>
                             </div>
