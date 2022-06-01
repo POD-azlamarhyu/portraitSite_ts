@@ -4,7 +4,7 @@ import GitHub from "@mui/icons-material/GitHub";
 import {workTypes,worktechTypes} from '../../api/type';
 const NoImage = require("../../../public/no_image_logo.png").default;
 
-const WorksCard:React.VFC<workTypes> = ({contents}) =>{
+const WorksCard:React.VFC<workTypes> = ({contents}:{contents:workTypes}) =>{
 
     const onClickGit = (url:string):void => {
         window.open(url);

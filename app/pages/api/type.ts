@@ -1,16 +1,16 @@
-export interface importImage{
+export type importImage = {
     src : string
     height: number
     width: number
     blurDataURL: string
 };
 
-export interface hobbysdescType{
+export type hobbysdescType = {
     id:number,
     param:string
 };
 
-export interface hobbysTypes{
+export type hobbysTypes = {
     id:number
     image: any
     title: string
@@ -20,12 +20,12 @@ export interface hobbysTypes{
     }[]
 };
 
-export interface worktechTypes{
+export type worktechTypes = {
     id: number,
     mark: string
 };
 
-export interface workTypes{
+export type workTypes = {
     id: number,
     image: any,
     title: string,
@@ -37,7 +37,7 @@ export interface workTypes{
     repository:string
 };
 
-export interface skillTypes{
+export type skillTypes = {
     id: number
     image: any
     title: string
@@ -45,3 +45,21 @@ export interface skillTypes{
     description: string
     color:string
 };
+
+export type skillCardCol = {
+    red: string;
+    blue: string;
+    indigo: string;
+    green: string;
+}
+
+export type topImage = {
+    id: number;
+    image: any;
+}
+
+export type urls = {
+    urlBlog:string;
+    urlGit:string;
+    urlTwitter:string;
+}

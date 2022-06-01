@@ -1,41 +1,45 @@
-// import {importImage} from './type';
+import {workTypes,skillTypes,importImage,hobbysTypes,hobbysdescType,worktechTypes,topImage,skillCardCol, urls} from './type';
 
-export const url = {
+export const url: urls= {
     urlBlog:"https://www.s-gakuenblog.com/",
     urlGit:"https://github.com/POD-azlamarhyu",
     urlTwitter:"https://twitter.com/Inc_capitalist",
 };
 
-export const webTitle = "Jiro's Portrait Site";
+export const webTitle: string = "Jiro's Portrait Site";
 // export const topImage = require("../../public/portrait_top.png").default;
 // export const topImage2 = require("../../public/portraitsite_top2.png").default;
 // export const topImage3 = require("../../public/portraitsite_top3.png").default;
 
-export const topImages = [
-    {
+export const topImages:topImage[] = [
+    {   
+        id:0,
         image:require("../../public/topimage1.png").default,
     },
-    {
+    {   
+        id:1,
         image:require("../../public/topimage2.png").default,
     },
-    {
+    {   
+        id:2,
         image:require("../../public/topimage3.png").default,
     },
-    {
+    {   
+        id:3,
         image:require("../../public/topimage4.png").default,
     }
 ];
 
-export const copyright = "shell varng 2022";
+export const copyright: string = "shell varng 2022";
 
-const skillCardCol = {
+const skillCardCol:skillCardCol = {
     red:`bg-gradient-to-r from-fuchsia-500 to-fuchsia-200 w-full md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
     blue:`bg-gradient-to-r from-blue-500 to-blue-200 md:w-132 w-full md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
     indigo:`bg-gradient-to-r from-indigo-500 to-indigo-200 w-full md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`,
     green:`bg-gradient-to-r from-gray-500 to-gray-200 w-full md:w-132 md:h-80 m-auto rounded-xl shadow-2xl transform hover:scale-110 transition-transform`
 }
 
-export const hobbysCardContents = [
+export const hobbysCardContents:hobbysTypes[] = [
     {
         id: 0,
         image: require("../../public/travel.png").default,
@@ -114,7 +118,7 @@ export const hobbysCardContents = [
     }
 ];
 
-export const worksCardContents = [
+export const worksCardContents:workTypes[] = [
     {
         id: 0,
         image: require("../../public/portrait_e.png").default,
@@ -241,7 +245,7 @@ export const worksCardContents = [
     },
 ];
 
-export const skillCardContents = [
+export const skillCardContents:skillTypes[] = [
     {
         id: 0,
         image: "devicon-python-plain colored",
