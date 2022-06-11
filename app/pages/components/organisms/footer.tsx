@@ -9,7 +9,7 @@ import { copyright } from "../../api/variable";
 
 
 
-const Footer = () => {
+const Footer:React.VFC = () => {
 
     const openUrl = (n:number) =>{
         if(n === 0){
