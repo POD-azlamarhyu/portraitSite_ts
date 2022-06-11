@@ -3,7 +3,7 @@ import "devicon";
 import Rating from '@mui/material/Rating';
 import { skillTypes } from "../../api/type";
 
-const SkillCard:React.VFC<skillTypes> = ({contents}:{contents:skillTypes}) =>{
+const SkillCard:React.VFC = ({contents}:{contents:skillTypes}) =>{
     return(
         <div className="p-4">
             <div className={contents.color}>

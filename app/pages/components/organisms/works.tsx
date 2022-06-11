@@ -11,13 +11,13 @@ const Works:React.VFC = () => {
     return(
         <>
             <Header />
-                <div className="min-h-screen flex justify-center items-center flex-wrap md:mx-3 mx-1">
-                    {worksCardContents.map((contents:workTypes) => {
-                        return (
-                            <WorksCard contents={contents} key={contents.id}/>
-                        );
-                    })}
-                </div>
+            <div className="min-h-screen flex justify-center items-center flex-wrap md:mx-3 mx-1">
+                {worksCardContents.map((contents:workTypes) => {
+                    return (
+                        <WorksCard contents={contents} key={contents.id}/>
+                    );
+                })}
+            </div>
             <Footer />
         </>
     );
