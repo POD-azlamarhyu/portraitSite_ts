@@ -1,6 +1,7 @@
-import React from "react";
+
 import Header from "./header";
 import Footer from "./footer";
+import React from "react";
 
 const About:React.VFC = () =>{
     return(

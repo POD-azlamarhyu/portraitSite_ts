@@ -2,7 +2,7 @@ import React from "react";
 import {hobbysTypes,hobbysdescType} from "../../api/type";
 const NoImage:any = require("../../../public/no_image_logo.png").default;
 
-const HobbysLeftCard:React.VFC<hobbysTypes,hobbysdescType> = ({contents}:{contents:hobbysTypes}) => {
+const HobbysLeftCard:React.VFC = ({contents}:{contents:hobbysTypes}) => {
     return (
         <div className="flex flex-col md:flex-row w-full h-94 bg-sky-300 mx-2 my-10 rounded-xl transform 
                             hover:scale-110 transition-transform">
