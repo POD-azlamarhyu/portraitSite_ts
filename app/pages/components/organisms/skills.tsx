@@ -12,7 +12,7 @@ const Skills:React.VFC = () =>{
     return(
         <>
             <Header />
-            <div className="flex justify-center">
+            <div className="flex justify-center bg-indigo-50">
                 <div className="min-h-screen flex flex-wrap justify-center items-center mx-3 my-3 md:mx-6 md:my-5">
                     {skillCardContents.map((contents:skillTypes)=> {
                         return (

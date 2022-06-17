@@ -146,6 +146,47 @@ export const worksCardContents:workTypes[] = [
     },
     {
         id: 1,
+        image: require("../../public/twitter_clone.png").default,
+        title: "Twitter Clone SPA",
+        description: "TwitterのクローンをDjangoRF,postgreSQL,NextJS,Dockerを用いてSPAとして作成．",
+        useTech: [
+            {
+                id:0,
+                mark: "devicon-python-plain colored",
+            },
+            {
+                id: 1,
+                mark:"devicon-django-plain-wordmark colored",
+            },
+            {
+                id:2,
+                mark:"devicon-nextjs-original-wordmark colored",
+            },
+            {
+                id:3,
+                mark:"devicon-typescript-plain colored"
+            },
+            {
+                id:4,
+                mark:"devicon-materialui-plain colored"
+            },
+            {
+                id:5,
+                mark:"devicon-tailwindcss-plain colored",
+            },
+            {
+                id:6,
+                mark:'devicon-docker-plain colored',
+            },
+            {
+                id:7,
+                mark:'devicon-postgresql-plain colored',
+            }
+        ],
+        repository:"https://github.com/POD-azlamarhyu/Twitter_clone_SPA"
+    },
+    {
+        id: 1,
         image: require("../../public/toweet_e.png").default,
         title: "Django Tweet App",
         description: "twitterのクローンをDjangoの練習も兼ねて作成しました．",
@@ -282,7 +323,7 @@ export const skillCardContents:skillTypes[] = [
         id: 4,
         image: "devicon-typescript-plain colored",
         title: "TypeScript",
-        stars: 2,
+        stars: 3,
         description: "JSと並行して型付になれるため勉強していきます．",
         color: skillCardCol.red,
     },
@@ -331,7 +372,7 @@ export const skillCardContents:skillTypes[] = [
         id: 10,
         image: "devicon-django-plain-wordmark colored",
         title: "Django",
-        stars: 3,
+        stars: 4,
         description: "サーバサイドのフレームワークとして使っています．Pythonが最もなれているのでこれを選びました．",
         color: skillCardCol.green,
     },
